@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DressUp_BL", "DressUp_Logic\DressUp_BL.shproj", "{914F4E54-0172-49E7-9025-4A6CAB9A4AFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DressUp_Tests", "DressUp_Tests\DressUp_Tests.csproj", "{B8451CB8-B68F-4784-8048-8D674A11BB64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8451CB8-B68F-4784-8048-8D674A11BB64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8451CB8-B68F-4784-8048-8D674A11BB64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8451CB8-B68F-4784-8048-8D674A11BB64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8451CB8-B68F-4784-8048-8D674A11BB64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8675B392-9D3A-4D64-85CC-BAF8101BD764}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DressUp_Logic\DressUp_Logic.projitems*{914f4e54-0172-49e7-9025-4a6cab9a4afd}*SharedItemsImports = 13
+		DressUp_Logic\DressUp_Logic.projitems*{b8451cb8-b68f-4784-8048-8d674a11bb64}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal

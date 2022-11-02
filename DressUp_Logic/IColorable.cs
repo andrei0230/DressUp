@@ -2,6 +2,6 @@
 {
     public interface IColorable
     {
-        public double GetColor(string photo);
+        public double GetColor(string _photo);
     }
 }

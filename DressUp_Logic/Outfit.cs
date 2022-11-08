@@ -23,6 +23,10 @@
 
         #region Properties
 
+        public Body Body { get { return body; } }
+        public Pants Pants { get { return pants; } }
+        public Shoes Shoes { get { return shoes; } }
+
         #endregion
 
         #region Methods

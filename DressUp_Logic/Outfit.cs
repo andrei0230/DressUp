@@ -4,19 +4,19 @@
     {
         #region Fields
 
-        private List<Body> bodies;
-        private List<Pants> pants;
-        private List<Shoes> shoes;
+        private Body body;
+        private Pants pants;
+        private Shoes shoes;
 
         #endregion
 
         #region Constructors
 
-        public Outfit()
+        public Outfit(Body _body, Pants _pants, Shoes _shoes)
         {
-            bodies = new List<Body>();
-            pants = new List<Pants>();
-            shoes = new List<Shoes>();
+            body = _body;
+            pants = _pants;
+            shoes = _shoes;
         }
 
         #endregion

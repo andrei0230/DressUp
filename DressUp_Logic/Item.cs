@@ -1,4 +1,6 @@
-﻿namespace DressUp_Logic
+﻿using SkiaSharp;
+
+namespace DressUp_Logic
 {
     public abstract class Item
     {
@@ -23,8 +25,39 @@
 
         public string Name { get { return name; } set { name = value;  } }
 
-        public string Photo { get { return photo; } set { photo = value; } }   
+        public string Photo { get { return photo; } set { photo = value; } }
 
         #endregion
+
+        #region Methods
+
+        public RGBColor GetColor()
+        {
+            SKFileStream fs = new SKFileStream(Photo);
+            SKBitmap bmap = SKBitmap.Decode(fs);
+
+            float r = 0;
+            float g = 0;
+            float b = 0;
+            int num = 0;
+
+            for (int i = 0; i < bmap.Width; i++)
+            {
+                for (int j = 0; j < bmap.Height; j++)
+                {
+                    r += bmap.GetPixel(i,j).Red;
+                    g += bmap.GetPixel(i,j).Green;
+                    b += bmap.GetPixel(i,j).Blue;
+                    num++;
+                }
+            }
+
+            RGBColor color = new RGBColor(r,g,b);
+
+            return color;
+        }
+
+        #endregion
+
     }
 }

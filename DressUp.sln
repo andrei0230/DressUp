@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DressUp_Tests", "DressUp_Tests\DressUp_Tests.csproj", "{B8451CB8-B68F-4784-8048-8D674A11BB64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DressUp_Logic", "DressUp_Logic\DressUp_Logic.csproj", "{49C854F1-017E-45B4-AD92-38C095EC1871}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DressUp_Logic", "DressUp_Logic\DressUp_Logic.csproj", "{49C854F1-017E-45B4-AD92-38C095EC1871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DressUp_WPF", "DressUp_WPF\DressUp_WPF.csproj", "{71560376-1B21-48AE-BCDC-0986424F8327}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{49C854F1-017E-45B4-AD92-38C095EC1871}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49C854F1-017E-45B4-AD92-38C095EC1871}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49C854F1-017E-45B4-AD92-38C095EC1871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71560376-1B21-48AE-BCDC-0986424F8327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71560376-1B21-48AE-BCDC-0986424F8327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71560376-1B21-48AE-BCDC-0986424F8327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71560376-1B21-48AE-BCDC-0986424F8327}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

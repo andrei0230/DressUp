@@ -1,4 +1,6 @@
-﻿namespace DressUp_Logic
+﻿using System.Linq.Expressions;
+
+namespace DressUp_Logic
 {
     public class OutfitManager
     {
@@ -26,6 +28,12 @@
         #endregion
 
         #region Methods
+
+        public void AddItem(Body item) { bodies.Add(item); }
+        
+        public void AddItem(Pants item) { pants.Add(item); }
+
+        public void AddItem(Shoes item) { shoes.Add(item); }
 
         #endregion
     }

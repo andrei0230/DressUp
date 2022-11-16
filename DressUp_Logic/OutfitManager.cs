@@ -1,6 +1,4 @@
-﻿using System.Linq.Expressions;
-
-namespace DressUp_Logic
+﻿namespace DressUp_Logic
 {
     public class OutfitManager
     {
@@ -34,6 +32,12 @@ namespace DressUp_Logic
         public void AddItem(Pants item) { pants.Add(item); }
 
         public void AddItem(Shoes item) { shoes.Add(item); }
+
+        public void RemoveItem(Body item) { bodies.Remove(item); }
+
+        public void RemoveItem(Pants item) { pants.Remove(item); }
+
+        public void RemoveItem(Shoes item) { shoes.Remove(item); }
 
         #endregion
     }

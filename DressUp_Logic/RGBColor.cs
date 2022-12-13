@@ -33,6 +33,14 @@ namespace DressUp_Logic
 
         #region Methods
 
+        public double Average() 
+        { 
+            double result = (this.R + this.G + this.B) / 3;
+            result = Math.Round(result, 2);
+
+            return result;
+        }
+        
         public static bool operator == (RGBColor c1, RGBColor c2)
         {
             if (c1 is null || c2 is null)

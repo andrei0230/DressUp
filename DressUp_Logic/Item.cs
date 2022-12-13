@@ -52,7 +52,11 @@ namespace DressUp_Logic
                 }
             }
 
-            RGBColor color = new RGBColor(r,g,b);
+            int red = (int)(r / num);
+            int green = (int)(g / num);
+            int blue = (int)(b / num);
+
+            RGBColor color = new RGBColor(red, green, blue);
 
             return color;
         }

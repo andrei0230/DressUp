@@ -22,4 +22,8 @@
     <ProjectReference Include="..\DressUp_Logic\DressUp_Logic.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pictures\" />
+  </ItemGroup>
+
 </Project>

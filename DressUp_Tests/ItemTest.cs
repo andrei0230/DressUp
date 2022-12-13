@@ -55,6 +55,33 @@ namespace DressUp_Tests
             Assert.AreEqual(expected_name, actual_name);
             Assert.AreEqual(expected_photo, actual_photo);
         }
+
+        [TestMethod]
+        public void TestGetColor()
+        {
+            // Arrange
+            RGBColor expected_color = new RGBColor(160, 81, 145);
+            Body actual_body = new Body("body", "C:\\Users\\andre\\source\\repos\\DressUp\\DressUp_Tests\\Pictures\\test_picture.png");
+            Pants actual_pants = new Pants("pants", "C:\\Users\\andre\\source\\repos\\DressUp\\DressUp_Tests\\Pictures\\test_picture.png");
+            Shoes actual_shoes = new Shoes("shoes", "C:\\Users\\andre\\source\\repos\\DressUp\\DressUp_Tests\\Pictures\\test_picture.png");
+            bool body_works = false;
+            bool pants_works = false;
+            bool shoes_works = false;
+
+            // Act
+            RGBColor actual_bodycolor = actual_body.GetColor();
+            RGBColor actual_pantscolor = actual_pants.GetColor();
+            RGBColor actual_shoescolor= actual_shoes.GetColor();
+
+            // Assert
+            if(expected_color == actual_bodycolor) body_works = true;
+            if(expected_color == actual_pantscolor) pants_works = true;
+            if(expected_color == actual_shoescolor) shoes_works = true;
+
+            Assert.IsTrue(body_works);
+            Assert.IsTrue(pants_works);
+            Assert.IsTrue(shoes_works);
+        }
     }
 
     [TestClass]

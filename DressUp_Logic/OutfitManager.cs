@@ -39,6 +39,32 @@
 
         public void RemoveItem(Shoes item) { shoes.Remove(item); }
 
+        public Outfit GetMatchedOutfit(Body body) 
+        {
+            Pants MatchedPants = pants[0];
+            Shoes MatchedShoes = shoes[0];
+
+            foreach (Pants p in pants)
+            {
+                if (body.GetColor().Average() == p.GetColor().Average() + 5 || body.GetColor().Average() == p.GetColor().Average() - 5)
+                {
+                    MatchedPants = p;
+                }
+            }
+
+            foreach (Shoes s in shoes)
+            {
+                if(body.GetColor().Average() == s.GetColor().Average() + 5 || body.GetColor().Average() == s.GetColor().Average() - 5)
+                {
+                    MatchedShoes = s;
+                }
+            }
+
+            Outfit MatchedOutfit = new Outfit(body, MatchedPants, MatchedShoes);
+
+            return MatchedOutfit;
+        }
+
         #endregion
     }
 }

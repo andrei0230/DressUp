@@ -5,10 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DressUp_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="DressUp" Height="500" Width="750">
 
-    <StackPanel>
-
-    </StackPanel>    
-    
 </Window>

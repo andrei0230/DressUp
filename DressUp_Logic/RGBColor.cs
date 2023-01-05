@@ -6,28 +6,28 @@ namespace DressUp_Logic
     {
         #region Fields
 
-        private float r = 0;
-        private float g = 0;
-        private float b = 0;
+        private float _r = 0;
+        private float _g = 0;
+        private float _b = 0;
 
         #endregion
 
         #region Constructors
 
-        public RGBColor(float _r, float _g, float _b)
+        public RGBColor(float r, float g, float b)
         {
-            r = _r;
-            g = _g;
-            b = _b;
+            _r = r;
+            _g = g;
+            _b = b;
         }
 
         #endregion
 
         #region Properties
 
-        public float R { get { return r; } }
-        public float G { get { return g; } }
-        public float B { get { return b; } }
+        public float R { get { return _r; } }
+        public float G { get { return _g; } }
+        public float B { get { return _b; } }
 
         #endregion
 
@@ -64,12 +64,12 @@ namespace DressUp_Logic
 
             var color = (RGBColor)obj;
             
-            return (r == color.r && g == color.g && b == color.b);
+            return (_r == color._r && _g == color._g && _b == color._b);
         }
 
         public override int GetHashCode()
         {
-            return this.r.GetHashCode() ^ this.g.GetHashCode() ^ this.b.GetHashCode();
+            return this._r.GetHashCode() ^ this._g.GetHashCode() ^ this._b.GetHashCode();
         }
 
         #endregion

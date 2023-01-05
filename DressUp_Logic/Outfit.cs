@@ -4,28 +4,28 @@
     {
         #region Fields
 
-        private Body body;
-        private Pants pants;
-        private Shoes shoes;
+        private Body _body;
+        private Pants _pants;
+        private Shoes _shoes;
 
         #endregion
 
         #region Constructors
 
-        public Outfit(Body _body, Pants _pants, Shoes _shoes)
+        public Outfit(Body body, Pants pants, Shoes shoes)
         {
-            body = _body;
-            pants = _pants;
-            shoes = _shoes;
+            _body = body;
+            _pants = pants;
+            _shoes = shoes;
         }
 
         #endregion
 
         #region Properties
 
-        public Body Body { get { return body; } }
-        public Pants Pants { get { return pants; } }
-        public Shoes Shoes { get { return shoes; } }
+        public Body Body { get { return _body; } }
+        public Pants Pants { get { return _pants; } }
+        public Shoes Shoes { get { return _shoes; } }
 
         #endregion
 

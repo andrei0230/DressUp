@@ -23,6 +23,12 @@
 
         #region Properties
 
+        public List<Body> BodyList { get { return bodies; } }
+        
+        public List<Pants> PantsList { get { return pants; } }
+
+        public List<Shoes> ShoesList { get { return shoes; } }
+
         #endregion
 
         #region Methods

@@ -6,26 +6,26 @@ namespace DressUp_Logic
     {
         #region Fields
 
-        private string _name = "name";
-        private string _photo = "photo";
+        private string name = "name";
+        private string photo = "photo";
 
         #endregion
 
         #region Constructors
 
-        public Item(string name, string photo)
+        public Item(string _name, string _photo)
         {
-            Name = name;
-            Photo = photo;
+            Name = _name;
+            Photo = _photo;
         }
 
         #endregion
 
         #region Properties
 
-        public string Name { get { return _name; } set { _name = value;  } }
+        public string Name { get { return name; } set { name = value;  } }
 
-        public string Photo { get { return _photo; } set { _photo = value; } }
+        public string Photo { get { return photo; } set { photo = value; } }
 
         #endregion
 

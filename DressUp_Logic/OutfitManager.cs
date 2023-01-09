@@ -9,6 +9,7 @@ namespace DressUp_Logic
         private List<Body> _bodylist;
         private List<Pants> _pantslist;
         private List<Shoes> _shoeslist;
+        private int _coloraccuracy;
 
         #endregion
 
@@ -19,6 +20,7 @@ namespace DressUp_Logic
             _bodylist = new List<Body>();
             _pantslist = new List<Pants>();
             _shoeslist = new List<Shoes>();
+            _coloraccuracy = 5;
         }
 
         #endregion
@@ -30,6 +32,8 @@ namespace DressUp_Logic
         public List<Pants> PantsList { get { return _pantslist; } }
 
         public List<Shoes> ShoesList { get { return _shoeslist; } }
+
+        public int ColorAccuracy { get { return _coloraccuracy; } set { _coloraccuracy = value; } }
 
         #endregion
 
@@ -54,7 +58,7 @@ namespace DressUp_Logic
 
             foreach (Pants p in PantsList)
             {
-                if (body.GetColor().Average() == p.GetColor().Average() + 5 || body.GetColor().Average() == p.GetColor().Average() - 5)
+                if (body.GetColor().Average() == p.GetColor().Average() + ColorAccuracy || body.GetColor().Average() == p.GetColor().Average() - ColorAccuracy)
                 {
                     MatchedPants = p;
                 }
@@ -62,7 +66,7 @@ namespace DressUp_Logic
 
             foreach (Shoes s in ShoesList)
             {
-                if(body.GetColor().Average() == s.GetColor().Average() + 5 || body.GetColor().Average() == s.GetColor().Average() - 5)
+                if(body.GetColor().Average() == s.GetColor().Average() + ColorAccuracy || body.GetColor().Average() == s.GetColor().Average() - ColorAccuracy)
                 {
                     MatchedShoes = s;
                 }
@@ -80,7 +84,7 @@ namespace DressUp_Logic
 
             foreach (Body b in BodyList)
             {
-                if (pants.GetColor().Average() == b.GetColor().Average() + 5 || pants.GetColor().Average() == b.GetColor().Average() - 5)
+                if (pants.GetColor().Average() == b.GetColor().Average() + ColorAccuracy || pants.GetColor().Average() == b.GetColor().Average() - ColorAccuracy)
                 {
                     MatchedBody = b;
                 }
@@ -88,7 +92,7 @@ namespace DressUp_Logic
 
             foreach (Shoes s in ShoesList)
             {
-                if (pants.GetColor().Average() == s.GetColor().Average() + 5 || pants.GetColor().Average() == s.GetColor().Average() - 5)
+                if (pants.GetColor().Average() == s.GetColor().Average() + ColorAccuracy || pants.GetColor().Average() == s.GetColor().Average() - ColorAccuracy)
                 {
                     MatchedShoes = s;
                 }
@@ -106,7 +110,7 @@ namespace DressUp_Logic
 
             foreach (Body b in BodyList)
             {
-                if (shoes.GetColor().Average() == b.GetColor().Average() + 5 || shoes.GetColor().Average() == b.GetColor().Average() - 5)
+                if (shoes.GetColor().Average() == b.GetColor().Average() + ColorAccuracy || shoes.GetColor().Average() == b.GetColor().Average() - ColorAccuracy)
                 {
                     MatchedBody = b;
                 }
@@ -114,7 +118,7 @@ namespace DressUp_Logic
 
             foreach (Pants p in PantsList)
             {
-                if (shoes.GetColor().Average() == p.GetColor().Average() + 5 || shoes.GetColor().Average() == p.GetColor().Average() - 5)
+                if (shoes.GetColor().Average() == p.GetColor().Average() + ColorAccuracy || shoes.GetColor().Average() == p.GetColor().Average() - ColorAccuracy)
                 {
                     MatchedPants = p;
                 }
